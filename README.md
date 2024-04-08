@@ -10,10 +10,13 @@ In this Project,I have created a dashboard in Power Bi for the call centre manag
 
 - Total Calls = COUNT(Sheet1[Call Id])
 - Answered = CALCULATE([Total Calls],Sheet1[Answered (Y/N)]= "Y")
-- Not Answered = CALCULATE([Total Calls],Sheet1[Answered (Y/N)] ="N") 4.Resolved = CALCULATE([Total Calls],Sheet1[Resolved]= "Y")
+- Not Answered = CALCULATE([Total Calls],Sheet1[Answered (Y/N)] ="N")
+- Resolved = CALCULATE([Total Calls],Sheet1[Resolved]= "Y")
 - Unresolved = CALCULATE([Total Calls],Sheet1[Resolved]= "N")
-- Answered % = DIVIDE('All measures'[Answered],[Total Calls]) 7.Not Answered % = DIVIDE([Not Answered],[Total Calls])
-- Resolved % = DIVIDE('All measures'[Resolved],[Total Calls]) 9.Unresolved % = DIVIDE([Unresolved],[Total Calls])
+- Answered % = DIVIDE('All measures'[Answered],[Total Calls])
+- Not Answered % = DIVIDE([Not Answered],[Total Calls])
+- Resolved % = DIVIDE('All measures'[Resolved],[Total Calls])
+- Unresolved % = DIVIDE([Unresolved],[Total Calls])
 
 # Dataset:
 The dataset used for this task was presented by https://www.theforage.com
@@ -22,14 +25,16 @@ The dataset used for this task was presented by https://www.theforage.com
 - The data consists of over 5000 rows and 16 columns 2.Changed the datatypes of certain columns
 - The month name and weekday are extracted for further analysis.
 - Replaced Y/N with Yes/No for better readability.
-- Sorted the month and week in charts using the daynum and monthnum columns. 6.Various Dax Measures were created beforehand like Average satisfaction rating, average speed of answers in minutes/seconds, Total calls etc.
+- Sorted the month and week in charts using the daynum and monthnum columns.
+- Various Dax Measures were created beforehand like Average satisfaction rating, average speed of answers in minutes/seconds, Total calls etc.
 
 # Questions to be Answered :
 - Important Overall metrics like : i. Total Calls ii. Average Speed of Answer in mins iii. Average talk duration in mins iv. Average Satisfaction rating and target rating
 - Agent statistics like totals calls, total resolved calls, answered calls, satisfaction ratings etc
 - What was each month's stat ie calls answered- Yes and no?
 - What was the total number of calls answered and resolved?
-- What day of the week receives the most calls? 6.What was the Topic of Answered and Not Answered calls? 7.Which Agent Resolved the most issue & Which agent not answered most of the calls ?
+- What day of the week receives the most calls?
+- What was the Topic of Answered and Not Answered calls? 7.Which Agent Resolved the most issue & Which agent not answered most of the calls ?
 
 
 ![CALL CENTRE_001](https://github.com/Bhagyaak47/PWC-Call-Centre-PowerBi-Dashboard/assets/152842490/de1fabd1-46b1-4ccc-b3f7-89cf5078e528)
