@@ -3,9 +3,11 @@
 PwC Power BI Virtual Case Experience Task 1- Call Centre Analysis and Dashboard
 
 # Problem Statement :
+
 In this Project,I have created a dashboard in Power Bi for the call centre manager that reflects all relevant Key Performance Indicators(KPI's) and matrics in the dataset.
 
-Possible KPI's & their DAX formulas :
+# Possible KPI's & their DAX formulas :
+
 1.Total Calls = COUNT(Sheet1[Call Id])
 2.Answered = CALCULATE([Total Calls],Sheet1[Answered (Y/N)]= "Y")
 3.Not Answered = CALCULATE([Total Calls],Sheet1[Answered (Y/N)] ="N") 4.Resolved = CALCULATE([Total Calls],Sheet1[Resolved]= "Y")
@@ -29,8 +31,10 @@ The dataset used for this task was presented by https://www.theforage.com
 4.What was the total number of calls answered and resolved?
 5.What day of the week receives the most calls? 6.What was the Topic of Answered and Not Answered calls? 7.Which Agent Resolved the most issue & Which agent not answered most of the calls ?
 
-![CALL CENTRE_001](https://github.com/Bhagyaak47/PWC-Call-Centre-PowerBi-Dashboard/assets/152842490/2f6a786a-90c6-4c49-9c02-a2f82cc904bd)
-![CALL CENTRE_002](https://github.com/Bhagyaak47/PWC-Call-Centre-PowerBi-Dashboard/assets/152842490/03ad7808-34d3-44cc-b512-192c227e96ac)
+
+![CALL CENTRE_001](https://github.com/Bhagyaak47/PWC-Call-Centre-PowerBi-Dashboard/assets/152842490/de1fabd1-46b1-4ccc-b3f7-89cf5078e528)
+
+![CALL CENTRE_002](https://github.com/Bhagyaak47/PWC-Call-Centre-PowerBi-Dashboard/assets/152842490/3a5528e6-b4d7-4916-a553-3a772acfd001)
 
 
 # Insights :
